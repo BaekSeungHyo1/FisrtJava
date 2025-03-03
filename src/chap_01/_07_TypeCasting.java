@@ -28,5 +28,23 @@ public class _07_TypeCasting {
         int convertedScoreint = (int)score_D; // incompatible types: possible lossy conversion from float to int
         // double -> float -> long ->int (수동 형변환) ex) (int)를 수동으로 넣어주기! // (자료형 불일치: float에서 int로 변환하는 과정에서 데이터 손실 가능)
 
+        // 숫자를 문자열로
+        String s1 = String.valueOf(93);
+        s1 = Integer.toString(93);
+        System.out.println(s1); // 93이라는 정수형 데이터가 문자열 93으로 출력
+
+        String s2 = String.valueOf(98.8);
+        s2 = Double.toString(98.8);
+        System.out.println(s2);
+
+        // 문자열을 숫자로
+        int i = Integer.parseInt("93");
+        System.out.println(i);
+        double d = Double.parseDouble("98.8");
+        System.out.println(d);
+
+        int error = Integer.parseInt("93");
+
+
     }
 }
